@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Macdonald</title>
+</head>
+<style>
+    div>button{
+        color: white;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: blue;
+    }
+    p{
+        color:blue;
+        font-size: 25px;
+    }
+    h1{
+        text-align: center;
+    }
+    #container{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    #container>img{
+        width:300px;
+        height:300px;
+        margin: 20px 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+</style>
+
+<body>
+    <div>
+        <p>Please Select The Items From Menu Card</p>
+        <input type="checkbox" id="veg_thali" name="veg_thali" value="">
+        <label for="veg_thali"> Veg Thali</label><br>
+        <input type="checkbox" id="nonveg_thali" name="nonveg_thali" value="">
+        <label for="nonveg_thali"> Nonveg Thali</label><br>
+        <input type="checkbox" id="burger" name="burger" value="">
+        <label for="burger"> Burger</label><br>
+        <input type="checkbox" id="frenchfries" name="frenchfries" value="">
+        <label for="frenchfries"> french fries</label><br>
+        <input type="checkbox" id="water" name="water" value="">
+        <label for="water"> Water Bottle</label><br>
+        <input type="checkbox" id="coke" name="coke" value="">
+        <label for="coke"> Diet coke</label><br>
+        <button id="order" >Order Food</button>
+
+    </div>
+    <div id="container">
+        <h1></h1>
+
+    </div>
+    <script src="./Macdonald.js"></script>
+</body>
+
+</html>
