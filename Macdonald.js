@@ -43,15 +43,33 @@ function placeOrder() {
 
 
 }
+
+var count = 5
 function fun() {
+  var z  = setInterval(()=>{
+    if(count==0){
+      clearInterval(z)
+      p.innerText = "Your Order Food is Here"
+    }
+    var p = document.querySelector("h1")
+    p.innerText = "Your Order Is Accepted, Please Wait For "+ count +" Sec. Your Food Is Being Prepared"
+    document.querySelector("body").append(p)
+    count--
+  },1000)
+  
+  
   var script = document.createElement("script")
   script.src = ("./myscript.js")
   document.querySelector("body").append(script)
-  var p = document.querySelector("h1")
-  p.innerText = "Your Order Is Accepted Please Wait For 5 Sec"
-  document.querySelector("body").append(p)
+  
+  
 
 }
+function y(count){
+ 
+  
+  }
+
 
 
 document.getElementById("order").addEventListener("click", fun)

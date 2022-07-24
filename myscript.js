@@ -9,6 +9,7 @@ const myPromise = new Promise((resolve, reject) => {
 
 myPromise.then(function fun(res) {
     if (res == "done")
-        placeOrder()
+    setTimeout(placeOrder(),3000)
+        
 
 })
