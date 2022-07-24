@@ -8,32 +8,32 @@ function placeOrder() {
   var coke = document.getElementById("coke").checked
   if (veg_thali == true) {
     let tag = document.createElement("img")
-    tag.src = "./veg.jpg"
+    tag.src = "./images/veg.jpg"
     document.getElementById("container").append(tag)
   }
   if (nonveg_thali == true) {
     let tag = document.createElement("img")
-    tag.src = "./nonveg.jpg"
+    tag.src = "./images/nonveg.jpg"
     document.getElementById("container").append(tag)
   }
   if (burger == true) {
     let tag = document.createElement("img")
-    tag.src = "./burger.jpg"
+    tag.src = "./images/burger.jpg"
     document.getElementById("container").append(tag)
   }
   if (frenchfries == true) {
     let tag = document.createElement("img")
-    tag.src = "./French-Fries.png"
+    tag.src = "./images/French-Fries.png"
     document.getElementById("container").append(tag)
   }
   if (water == true) {
     let tag = document.createElement("img")
-    tag.src = "./water.jpg"
+    tag.src = "./images/water.jpg"
     document.getElementById("container").append(tag)
   }
   if (coke == true) {
     let tag = document.createElement("img")
-    tag.src = "./coke.jpg"
+    tag.src = "./images/coke.jpg"
     document.getElementById("container").append(tag)
   }
   
